@@ -1,0 +1,14 @@
+E:\dev\C#\Planets\Planets3\bin\Debug\net6.0\Planets3.exe
+E:\dev\C#\Planets\Planets3\bin\Debug\net6.0\Planets3.deps.json
+E:\dev\C#\Planets\Planets3\bin\Debug\net6.0\Planets3.runtimeconfig.json
+E:\dev\C#\Planets\Planets3\bin\Debug\net6.0\Planets3.dll
+E:\dev\C#\Planets\Planets3\bin\Debug\net6.0\Planets3.pdb
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\Planets3.GeneratedMSBuildEditorConfig.editorconfig
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\Planets3.AssemblyInfoInputs.cache
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\Planets3.AssemblyInfo.cs
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\Planets3.csproj.CoreCompileInputs.cache
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\Planets3.dll
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\refint\Planets3.dll
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\Planets3.pdb
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\Planets3.genruntimeconfig.cache
+E:\dev\C#\Planets\Planets3\obj\Debug\net6.0\ref\Planets3.dll
