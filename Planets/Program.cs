@@ -15,19 +15,14 @@ namespace Planets
             {
                 venus,
                 earth, 
-                mars, 
+                mars,
                 venusDuplicate,
             };
 
             for ( int i = 1; i < planets.Length; i++ )
             {
-                if (planets[i].EquatorLength == planets[0].EquatorLength)
-                {
-                    Console.WriteLine($"{planets[i]} is equal to Venus");
-                } else
-                {
-                    Console.WriteLine(planets[i]);
-                }
+                var equalResult = planets[i].EquatorLength.Equals(planets[0].EquatorLength) ? "is equal to Venus" : "is Not equal to Venus";
+                Console.WriteLine($"{planets[i]} {equalResult}");
             }
         }   
     }
