@@ -17,17 +17,19 @@ namespace Planets3
         public (int serialNumber, int equatorLength, string errorMessage) GetPlanet(string nameOfPlanet, Validator planetValidator)
         {
             (int, int, string) resultTuple;
-            string result = planetValidator();
-            if (result == "null")
+            string result = planetValidator(nameOfPlanet);
+            if (result == "null" || result == "Это запретная планета")
             {
                 var searchedPlanet = _listOfPlanet.Find(p => p.Name == nameOfPlanet);
+                
                 if (searchedPlanet != null)
                 {
                     resultTuple = (searchedPlanet.SerialNumber, searchedPlanet.EquatorLength, "-");
                 }
                 else
                 {
-                    resultTuple = (0, 0, "Не удалось найти планету");
+                    var msg = (result == "Это запретная планета") ? result : "Не удалось найти планету";
+                    resultTuple = (0, 0, $"{msg}");
 
                 }
             }
