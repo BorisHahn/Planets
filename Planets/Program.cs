@@ -1,10 +1,9 @@
-﻿using System.Numerics;
-
+﻿
 namespace Planets
 {
     internal class Program
     {
-        static void Main()
+        static internal void Main()
         {
    
             var venus = new { Name = "Venus", SerialNumber = 2, EquatorLength = 38025, PreviousPlanet = "" };

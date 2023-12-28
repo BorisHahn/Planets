@@ -13,31 +13,27 @@ namespace Planets2
                 _listOfPlanet.Add(item);
             }
         }
-        public void GetPlanet(string nameOfPlanet)
+        public (int serialNumber, int equatorLength, string errorMessage) GetPlanet(string nameOfPlanet)
         {
+            (int, int, string) resultTuple;
             _countOfGetPlanet++;
             if (_countOfGetPlanet % 3 != 0)
             {
-                var searchedPlanet = _listOfPlanet.Find(p => p._name == nameOfPlanet);
+                var searchedPlanet = _listOfPlanet.Find(p => p.Name == nameOfPlanet);
                 if (searchedPlanet != null)
                 {
-                    Console.WriteLine($"Запрашиваемая планета - {nameOfPlanet}");
-                    Console.WriteLine("Результат поиска: Планета найдена");
-                    Console.WriteLine($"Название - {searchedPlanet._name}");
-                    Console.WriteLine($"Порядковый номер от Солнца - {searchedPlanet._serialNumber}");
-                    Console.WriteLine($"Длина экватора - {searchedPlanet._equatorLength}");
+                    resultTuple = (searchedPlanet.SerialNumber, searchedPlanet.EquatorLength, "-");
                 }
                 else
                 {
-                    Console.WriteLine($"Запрашиваемая планета - {nameOfPlanet}");
-                    Console.Write("Результат поиска: ");
-                    Console.WriteLine("Не удалось найти планету");
+                    resultTuple = (0, 0, "Не удалось найти планету");
+                   
                 }
             } else
             {
-                Console.WriteLine("Вы спрашиваете слишком часто");
+                resultTuple = (0, 0, "Вы спрашиваете слишком часто");
             }
-            Console.WriteLine("__________________________________________");
+            return resultTuple;
         }
     }
 }

@@ -3,12 +3,12 @@ namespace Planets2
 {
     internal class Planet
     {
-        public string Name {  get; set; }
+        public string Name { get; set; }
         public int SerialNumber { get; set; }
         public int EquatorLength { get; set; }
-        public object? PreviousPlanet { get; set; } = null;
+        public Planet PreviousPlanet { get; set; }
 
-        internal Planet(string name, int serialNumber, int equatorLength, object? previousPlanet = null) 
+        internal Planet(string name, int serialNumber, int equatorLength, Planet previousPlanet = null) 
         {
             Name = name;
             SerialNumber = serialNumber;
